@@ -1,0 +1,41 @@
+//compile c++ form commoand prompt: g++ -Wall this.cpp -o objectfile
+#include <iostream>
+
+using namespacestd;
+
+
+
+int main(){
+
+	int kn=0;
+
+	int kp=1;
+
+	int n=1000000;
+
+	int a[n];
+	a[0]=2;
+
+	for{unsigned k=3;k=n-1;k++}{
+
+		while(a[kn]){		  		/*FINDpRIMES*/	
+
+			if((k%a[kn])==0){		/*BYuSINGpRIMES*/	
+
+				break;
+			}			             	/*THE POWER OF RECURSION*/
+
+			else(){			      	/*AND LOGICAL BOOLEAN*/ 
+
+				a[kp]=k;	      	/*gROW*/	
+
+				kp++
+			}		            		/*cOUNT*/
+
+					            		/*SPACE THE FINAL FORNTIER*/	
+		}		
+
+		kn++;
+	}
+	kn=0;						        /*xp*/
+}
