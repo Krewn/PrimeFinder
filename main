@@ -8,34 +8,29 @@ using namespacestd;
 int main(){
 
 	int kn=0;
-
 	int kp=1;
-
 	int n=1000000;
-
 	int a[n];
 	a[0]=2;
 
-	for{unsigned k=3;k=n-1;k++}{
+	for(unsigned k=3;k=n-1;k++){
 
-		while(a[kn]){		  		/*FINDpRIMES*/	
+		while(a[kn]){		  	
 
-			if((k%a[kn])==0){		/*BYuSINGpRIMES*/	
-
+			if((k%a[kn])==0){	
 				break;
-			}			             	/*THE POWER OF RECURSION*/
-
-			else(){			      	/*AND LOGICAL BOOLEAN*/ 
-
-				a[kp]=k;	      	/*gROW*/	
-
-				kp++
-			}		            		/*cOUNT*/
-
-					            		/*SPACE THE FINAL FORNTIER*/	
+			}			             
+			else(){			     
+				if(a[kn]*a[kn]>k){
+					a[kp]=k;	      
+					kp++;
+					break;
+				}
+			}
 		}		
-
 		kn++;
 	}
-	kn=0;						        /*xp*/
+	kn=0;
+	
+	return 0;
 }
